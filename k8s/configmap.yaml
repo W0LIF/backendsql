@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: achievement-api-config
+data:
+  MONGODB_URL: "mongodb://mongodb-service:27017"
+  DATABASE_NAME: "achievement_db"

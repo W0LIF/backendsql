@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:7.0
+    container_name: achievement-mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: achievement_db
+    volumes:
+      - mongodb_data:/data/db
+
+  api:
+    build: .
+    container_name: achievement-api
+    restart: always
+    ports:
+      - "8001:8001"
+    environment:
+      MONGODB_URL: mongodb://mongodb:27017
+      DATABASE_NAME: achievement_db
+      SECRET_KEY: "your-secret-key-change-in-production"
+    volumes:
+      - ./uploads:/app/uploads
+    depends_on:
+      - mongodb
+
+volumes:
+  mongodb_data:
