@@ -1,9 +1,11 @@
+import os
 from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
-    MONGODB_URL: str = "mongodb://mongodb:27017"
-    DATABASE_NAME: str = "achievement_db"
-    SECRET_KEY: str = "your-secret-key-here-change-in-production"
+    # Берем URL из переменной окружения, которую Railway создаст автоматически
+    MONGODB_URL: str = os.getenv("MONGODB_URL", "mongodb://mongo:sUKqPJROItGYKHBrszkYkmrlHrAuRFdk@tramway.proxy.rlwy.net:47409")
+    DATABASE_NAME: str = os.getenv("DATABASE_NAME", "achievement_db")
+    SECRET_KEY: str = os.getenv("SECRET_KEY", "your-secret-key-here")
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
     

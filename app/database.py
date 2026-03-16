@@ -12,11 +12,13 @@ async def connect_to_mongo():
     try:
         print(f"Connecting to MongoDB at: {settings.MONGODB_URL}")
         
-        # Добавляем таймауты и настройки подключения
+        # Добавляем параметры аутентификации
         mongodb.client = AsyncIOMotorClient(
             settings.MONGODB_URL,
             serverSelectionTimeoutMS=5000,
             connectTimeoutMS=5000,
+            # Если нужно указать базу для аутентификации
+            authSource="admin"  # или имя вашей базы данных
         )
         
         # Проверяем подключение
@@ -25,13 +27,32 @@ async def connect_to_mongo():
         
         mongodb.database = mongodb.client[settings.DATABASE_NAME]
         
-        # Создаем индексы
-        await mongodb.database.users.create_index("email", unique=True)
-        await mongodb.database.achievements.create_index("user_id")
-        await mongodb.database.stats.create_index("user_id", unique=True)
-        await mongodb.database.history.create_index("user_id")
+        # Создаем индексы с обработкой ошибок
+        try:
+            await mongodb.database.users.create_index("email", unique=True)
+            print("Created users index")
+        except Exception as e:
+            print(f"Note: users index may already exist: {e}")
         
-        print("Indexes created successfully!")
+        try:
+            await mongodb.database.achievements.create_index("user_id")
+            print("Created achievements index")
+        except Exception as e:
+            print(f"Note: achievements index may already exist: {e}")
+        
+        try:
+            await mongodb.database.stats.create_index("user_id", unique=True)
+            print("Created stats index")
+        except Exception as e:
+            print(f"Note: stats index may already exist: {e}")
+        
+        try:
+            await mongodb.database.history.create_index("user_id")
+            print("Created history index")
+        except Exception as e:
+            print(f"Note: history index may already exist: {e}")
+        
+        print("Indexes check completed!")
         
     except Exception as e:
         print(f"Failed to connect to MongoDB: {e}")
