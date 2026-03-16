@@ -94,3 +94,34 @@ class QueryHistory(BaseModel):
 class ChangePasswordRequest(BaseModel):
     current_password: str
     new_password: str
+
+# Achievement response
+class AchievementResponse(BaseModel):
+    id: str
+    title: str
+    description: str
+    icon: str
+    unlocked_at: Optional[datetime] = None
+    is_unlocked: bool = False
+
+# Stats response
+class StatsResponse(BaseModel):
+    query_count: int
+    streak_days: int
+    total_days: int
+    achievements_count: int
+
+# Bot query
+class BotQueryRequest(BaseModel):
+    query: str
+
+class BotQueryResponse(BaseModel):
+    response: str
+    query_count: int
+    new_achievements: List[Dict[str, Any]] = []
+
+# History response
+class HistoryResponse(BaseModel):
+    query: str
+    response: str
+    created_at: str

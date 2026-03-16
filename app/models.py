@@ -2,8 +2,13 @@ from datetime import datetime, timedelta
 from typing import Optional, List
 from pydantic import BaseModel, Field, EmailStr
 from bson import ObjectId
+from pydantic.json_schema import JsonSchemaMode
 
 class PyObjectId(ObjectId):
+    @classmethod
+    def __get_pydantic_json_schema__(cls, core_schema, handler):
+        return {"type": "string"}
+
     @classmethod
     def __get_validators__(cls):
         yield cls.validate
@@ -14,14 +19,10 @@ class PyObjectId(ObjectId):
             raise ValueError("Invalid objectid")
         return ObjectId(v)
 
-    @classmethod
-    def __modify_schema__(cls, field_schema):
-        field_schema.update(type="string")
-
 # Модель пользователя
 class UserModel(BaseModel):
     id: PyObjectId = Field(default_factory=PyObjectId, alias="_id")
-    email: EmailStr
+    email: str
     hashed_password: str
     name: Optional[str] = None
     phone: Optional[str] = None
@@ -29,10 +30,11 @@ class UserModel(BaseModel):
     created_at: datetime = Field(default_factory=datetime.utcnow)
     updated_at: datetime = Field(default_factory=datetime.utcnow)
 
-    class Config:
-        allow_population_by_field_name = True
-        arbitrary_types_allowed = True
-        json_encoders = {ObjectId: str}
+    model_config = {
+        "populate_by_name": True,
+        "arbitrary_types_allowed": True,
+        "json_encoders": {ObjectId: str}
+    }
 
 # Модель достижения
 class AchievementModel(BaseModel):
@@ -44,10 +46,11 @@ class AchievementModel(BaseModel):
     unlocked_at: Optional[datetime] = None
     is_unlocked: bool = False
 
-    class Config:
-        allow_population_by_field_name = True
-        arbitrary_types_allowed = True
-        json_encoders = {ObjectId: str}
+    model_config = {
+        "populate_by_name": True,
+        "arbitrary_types_allowed": True,
+        "json_encoders": {ObjectId: str}
+    }
 
 # Модель статистики
 class StatsModel(BaseModel):
@@ -59,10 +62,11 @@ class StatsModel(BaseModel):
     achievements_count: int = 0
     last_query_date: Optional[datetime] = None
 
-    class Config:
-        allow_population_by_field_name = True
-        arbitrary_types_allowed = True
-        json_encoders = {ObjectId: str}
+    model_config = {
+        "populate_by_name": True,
+        "arbitrary_types_allowed": True,
+        "json_encoders": {ObjectId: str}
+    }
 
 # Модель истории запросов
 class HistoryModel(BaseModel):
@@ -72,10 +76,11 @@ class HistoryModel(BaseModel):
     response: str
     created_at: datetime = Field(default_factory=datetime.utcnow)
 
-    class Config:
-        allow_population_by_field_name = True
-        arbitrary_types_allowed = True
-        json_encoders = {ObjectId: str}
+    model_config = {
+        "populate_by_name": True,
+        "arbitrary_types_allowed": True,
+        "json_encoders": {ObjectId: str}
+    }
 
 # Pydantic модели для API
 class UserCreate(BaseModel):
@@ -90,7 +95,7 @@ class UserLogin(BaseModel):
 
 class UserResponse(BaseModel):
     id: str
-    email: EmailStr
+    email: str
     name: Optional[str] = None
     phone: Optional[str] = None
     avatar_url: Optional[str] = None

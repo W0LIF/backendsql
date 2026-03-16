@@ -1,3 +1,4 @@
+from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
@@ -12,7 +13,15 @@ from .bot_routes import router as bot_router
 # Создаем директории для статических файлов
 os.makedirs("uploads/avatars", exist_ok=True)
 
-app = FastAPI(title="Achievement Bot API")
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Startup
+    await connect_to_mongo()
+    yield
+    # Shutdown
+    await close_mongo_connection()
+
+app = FastAPI(lifespan=lifespan, title="Achievement Bot API")
 
 # CORS
 app.add_middleware(
@@ -25,15 +34,6 @@ app.add_middleware(
 
 # Статические файлы
 app.mount("/static", StaticFiles(directory="uploads"), name="static")
-
-# Подключение к MongoDB
-@app.on_event("startup")
-async def startup_event():
-    await connect_to_mongo()
-
-@app.on_event("shutdown")
-async def shutdown_event():
-    await close_mongo_connection()
 
 # Роуты
 app.include_router(auth_router)

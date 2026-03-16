@@ -4,7 +4,8 @@ import os
 import shutil
 from datetime import datetime
 
-from .models import UpdateProfileRequest, ChangePasswordRequest, UserResponse
+from .schemas import UserUpdate as UpdateProfileRequest, ChangePasswordRequest
+from .models import UserResponse
 from .auth_routes import get_current_user, get_password_hash, verify_password
 from .database import get_database
 

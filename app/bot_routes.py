@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import List
 
-from .models import BotQueryRequest, BotQueryResponse, HistoryResponse
+from .schemas import BotQueryRequest, BotQueryResponse, HistoryResponse
 from .auth_routes import get_current_user
 from .database import get_database
 from .achievement_routes import check_and_unlock_achievements

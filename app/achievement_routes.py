@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends
 from datetime import datetime, timedelta
 from typing import List
 
-from .models import AchievementResponse, StatsResponse
+from .schemas import AchievementResponse, StatsResponse
 from .auth_routes import get_current_user
 from .database import get_database
 
