@@ -17,13 +17,15 @@ services:
     container_name: achievement-api
     restart: always
     ports:
-      - "8001:8001"
+      - "8000:8000"
     environment:
       MONGODB_URL: mongodb://mongodb:27017
       DATABASE_NAME: achievement_db
       SECRET_KEY: "your-secret-key-change-in-production"
+      PORT: 8000
     volumes:
       - ./uploads:/app/uploads
+      - ./data:/app/data
     depends_on:
       - mongodb
 

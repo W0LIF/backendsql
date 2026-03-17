@@ -2,6 +2,9 @@ import os
 from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
+
+    GIGACHAT_CREDENTIALS: str = os.getenv("GIGACHAT_CREDENTIALS", "019cfd98-676c-748d-b95c-bced0f2ed2f9")
+
     # Берем URL из переменной окружения, которую Railway создаст автоматически
     MONGODB_URL: str = os.getenv("MONGODB_URL", "mongodb://mongo:sUKqPJROItGYKHBrszkYkmrlHrAuRFdk@tramway.proxy.rlwy.net:47409")
     DATABASE_NAME: str = os.getenv("DATABASE_NAME", "achievement_db")
