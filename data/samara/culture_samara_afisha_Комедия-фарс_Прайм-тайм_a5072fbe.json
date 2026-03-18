@@ -1,0 +1,43 @@
+{
+  "title": "Комедия-фарс «Прайм-тайм»",
+  "link": "https://www.culture.ru/events/5916448/komediya-fars-praim-taim",
+  "event_id": 5916448,
+  "name": "komediya-fars-praim-taim",
+  "price_min": 600,
+  "price_max": 1000,
+  "is_pushkins_card": false,
+  "place_title": "Дворец культуры железнодорожников им. Пушкина г. Самары",
+  "thumbnail_id": "c935888f-6ef8-5d33-a739-f8312e42e8bb",
+  "date_text": "29 мар",
+  "date_week": "вс 18:00",
+  "tags": [
+    {
+      "_id": 3772,
+      "name": "klassicheskoe-iskusstvo",
+      "title": "Классическое искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 3687,
+      "name": "sovremennoe-iskusstvo",
+      "title": "Современное искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 3836,
+      "name": "premera",
+      "title": "Премьера",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 37,
+      "name": "spektakli",
+      "title": "Спектакли"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:33"
+}

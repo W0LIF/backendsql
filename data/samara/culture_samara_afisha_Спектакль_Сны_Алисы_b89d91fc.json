@@ -1,0 +1,43 @@
+{
+  "title": "Спектакль «Сны Алисы»",
+  "link": "https://www.culture.ru/events/2362824/spektakl-sny-alisy",
+  "event_id": 2362824,
+  "name": "spektakl-sny-alisy",
+  "price_min": 500,
+  "price_max": 800,
+  "is_pushkins_card": true,
+  "place_title": "Самарский театр юного зрителя «СамАрт»",
+  "thumbnail_id": "18a1165d-8d55-58bb-9434-1eeb081de75a",
+  "date_text": "04 апр",
+  "date_week": "сб 15:00",
+  "tags": [
+    {
+      "_id": 3612,
+      "name": "dlya-detei",
+      "title": "Для детей",
+      "isImportant": true
+    },
+    {
+      "_id": 3832,
+      "name": "skazka",
+      "title": "Сказка",
+      "isImportant": false
+    },
+    {
+      "_id": 4353,
+      "name": "dostupnaya-sreda",
+      "title": "Доступная среда",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 37,
+      "name": "spektakli",
+      "title": "Спектакли"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:33"
+}

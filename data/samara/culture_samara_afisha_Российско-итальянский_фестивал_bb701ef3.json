@@ -1,0 +1,43 @@
+{
+  "title": "Российско-итальянский фестиваль RIFF с показом фильма «Любовь без фильтров»",
+  "link": "https://www.culture.ru/events/6645026/rossiisko-italyanskii-festival-riff-s-pokazom-filma-lyubov-bez-filtrov",
+  "event_id": 6645026,
+  "name": "rossiisko-italyanskii-festival-riff-s-pokazom-filma-lyubov-bez-filtrov",
+  "price_min": 400,
+  "price_max": 400,
+  "is_pushkins_card": false,
+  "place_title": "Центр российской кинематографии «Художественный»",
+  "thumbnail_id": "75e97e19-3cc2-5bbd-b4d5-840186c00161",
+  "date_text": "20 мар",
+  "date_week": "пт 10:00",
+  "tags": [
+    {
+      "_id": 3611,
+      "name": "komediya",
+      "title": "Комедия",
+      "isImportant": false
+    },
+    {
+      "_id": 3686,
+      "name": "kinopokaz",
+      "title": "Кинопоказ",
+      "isImportant": false
+    },
+    {
+      "_id": 3750,
+      "name": "iskusstvo",
+      "title": "Искусство",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 66,
+      "name": "kino",
+      "title": "Кино"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:33"
+}

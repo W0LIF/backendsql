@@ -1,0 +1,31 @@
+{
+  "title": "Мелодраматическая комедия «Волки и овцы»",
+  "link": "https://www.culture.ru/events/6474323/melodramaticheskaya-komediya-volki-i-ovcy",
+  "event_id": 6474323,
+  "name": "melodramaticheskaya-komediya-volki-i-ovcy",
+  "price_min": 350,
+  "price_max": 1000,
+  "is_pushkins_card": false,
+  "place_title": "Дворец культуры железнодорожников им. Пушкина г. Самары",
+  "thumbnail_id": "4624ae49-a704-5074-8d1e-da3400743624",
+  "date_text": "25 апр",
+  "date_week": "сб 18:00",
+  "tags": [
+    {
+      "_id": 3772,
+      "name": "klassicheskoe-iskusstvo",
+      "title": "Классическое искусство",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 37,
+      "name": "spektakli",
+      "title": "Спектакли"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:35"
+}

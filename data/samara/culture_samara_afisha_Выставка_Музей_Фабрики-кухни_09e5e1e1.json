@@ -1,0 +1,49 @@
+{
+  "title": "Выставка «Музей Фабрики-кухни»",
+  "link": "https://www.culture.ru/events/6366544/vystavka-muzei-fabriki-kukhni",
+  "event_id": 6366544,
+  "name": "vystavka-muzei-fabriki-kukhni",
+  "price_min": 130,
+  "price_max": 250,
+  "is_pushkins_card": true,
+  "place_title": "Третьяковская галерея в г. Самаре",
+  "thumbnail_id": "32af08cd-e63f-5ca7-89b3-89e92929d1d8",
+  "date_text": "До 31 янв",
+  "date_week": "",
+  "tags": [
+    {
+      "_id": 3488,
+      "name": "arkhitektura",
+      "title": "Архитектура",
+      "isImportant": false
+    },
+    {
+      "_id": 3491,
+      "name": "istoriya",
+      "title": "История",
+      "isImportant": false
+    },
+    {
+      "_id": 3695,
+      "name": "dlya-molodezhi",
+      "title": "Для молодежи",
+      "isImportant": false
+    },
+    {
+      "_id": 4006,
+      "name": "kraevedenie",
+      "title": "Краеведение",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 34,
+      "name": "vistavki",
+      "title": "Выставки"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:30"
+}

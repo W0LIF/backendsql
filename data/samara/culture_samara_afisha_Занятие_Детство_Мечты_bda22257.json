@@ -1,0 +1,49 @@
+{
+  "title": "Занятие «Детство. Мечты»",
+  "link": "https://www.culture.ru/events/6558641/zanyatie-detstvo-mechty",
+  "event_id": 6558641,
+  "name": "zanyatie-detstvo-mechty",
+  "price_min": 270,
+  "price_max": 270,
+  "is_pushkins_card": true,
+  "place_title": "Третьяковская галерея в г. Самаре",
+  "thumbnail_id": "e46a3b4b-70fc-5be4-85e8-7e8dec408aec",
+  "date_text": "До 29 мар",
+  "date_week": "",
+  "tags": [
+    {
+      "_id": 3733,
+      "name": "izobrazitelnoe-iskusstvo",
+      "title": "Изобразительное искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 3750,
+      "name": "iskusstvo",
+      "title": "Искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 3881,
+      "name": "russkoe-iskusstvo",
+      "title": "Русское искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 4353,
+      "name": "dostupnaya-sreda",
+      "title": "Доступная среда",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 36,
+      "name": "obuchenie",
+      "title": "Обучение"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:30"
+}

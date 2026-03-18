@@ -1,0 +1,37 @@
+{
+  "title": "Опера «Аида»",
+  "link": "https://www.culture.ru/events/79966/opera-aida",
+  "event_id": 79966,
+  "name": "opera-aida",
+  "price_min": 300,
+  "price_max": 3000,
+  "is_pushkins_card": true,
+  "place_title": "Самарский академический театр оперы и балета им. Д. Д. Шостаковича",
+  "thumbnail_id": "31e650cb-32ea-583a-86fc-2835765e67cc",
+  "date_text": "27 мар",
+  "date_week": "пт 18:30",
+  "tags": [
+    {
+      "_id": 3719,
+      "name": "opera",
+      "title": "Опера",
+      "isImportant": false
+    },
+    {
+      "_id": 4353,
+      "name": "dostupnaya-sreda",
+      "title": "Доступная среда",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 37,
+      "name": "spektakli",
+      "title": "Спектакли"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:33"
+}

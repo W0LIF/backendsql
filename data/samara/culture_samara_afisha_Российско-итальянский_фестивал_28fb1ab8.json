@@ -1,0 +1,43 @@
+{
+  "title": "Российско-итальянский фестиваль RIFF с показом фильма «Последняя неделя лета»",
+  "link": "https://www.culture.ru/events/6645316/rossiisko-italyanskii-festival-riff-s-pokazom-filma-poslednyaya-nedelya-leta",
+  "event_id": 6645316,
+  "name": "rossiisko-italyanskii-festival-riff-s-pokazom-filma-poslednyaya-nedelya-leta",
+  "price_min": 400,
+  "price_max": 400,
+  "is_pushkins_card": false,
+  "place_title": "Центр российской кинематографии «Художественный»",
+  "thumbnail_id": "5f1bed97-20ec-588e-87f4-b706339983ae",
+  "date_text": "21 мар",
+  "date_week": "сб 10:00",
+  "tags": [
+    {
+      "_id": 3611,
+      "name": "komediya",
+      "title": "Комедия",
+      "isImportant": false
+    },
+    {
+      "_id": 3686,
+      "name": "kinopokaz",
+      "title": "Кинопоказ",
+      "isImportant": false
+    },
+    {
+      "_id": 3787,
+      "name": "drama",
+      "title": "Драма",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 66,
+      "name": "kino",
+      "title": "Кино"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:33"
+}

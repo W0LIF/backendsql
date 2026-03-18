@@ -1,0 +1,31 @@
+{
+  "title": "«Это все она»",
+  "link": "https://www.culture.ru/events/3403115/eto-vse-ona",
+  "event_id": 3403115,
+  "name": "eto-vse-ona",
+  "price_min": 1500,
+  "price_max": 1500,
+  "is_pushkins_card": false,
+  "place_title": "Самарский академический театр драмы им. М. Горького",
+  "thumbnail_id": "2c3a910a-ce5b-59f6-b66c-ba5903fdc57b",
+  "date_text": "18 мар",
+  "date_week": "ср 19:00",
+  "tags": [
+    {
+      "_id": 3836,
+      "name": "premera",
+      "title": "Премьера",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 37,
+      "name": "spektakli",
+      "title": "Спектакли"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:30"
+}

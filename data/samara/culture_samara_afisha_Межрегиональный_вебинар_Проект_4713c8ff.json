@@ -1,0 +1,61 @@
+{
+  "title": "Межрегиональный вебинар «Проектная деятельность в специальных библиотеках. Опыт 2025 года»",
+  "link": "https://www.culture.ru/events/6628417/mezhregionalnyi-vebinar-proektnaya-deyatelnost-v-specialnykh-bibliotekakh-opyt-2025-goda",
+  "event_id": 6628417,
+  "name": "mezhregionalnyi-vebinar-proektnaya-deyatelnost-v-specialnykh-bibliotekakh-opyt-2025-goda",
+  "price_min": 0,
+  "price_max": 0,
+  "is_pushkins_card": false,
+  "place_title": "Самарская библиотека для слепых на ул. Никитинской",
+  "thumbnail_id": "1d6150bc-d615-5d44-8693-9981d8f29181",
+  "date_text": "27 мар",
+  "date_week": "пт 12:00",
+  "tags": [
+    {
+      "_id": 3685,
+      "name": "besplatno",
+      "title": "Бесплатно",
+      "isImportant": false
+    },
+    {
+      "_id": 3724,
+      "name": "bibliotechnoe-delo",
+      "title": "Библиотечное дело",
+      "isImportant": false
+    },
+    {
+      "_id": 3992,
+      "name": "proekt",
+      "title": "Проект",
+      "isImportant": false
+    },
+    {
+      "_id": 4260,
+      "name": "slepye",
+      "title": "Слепые",
+      "isImportant": false
+    },
+    {
+      "_id": 4261,
+      "name": "slabovidyashie",
+      "title": "Слабовидящие",
+      "isImportant": false
+    },
+    {
+      "_id": 6732,
+      "name": "kultura-onlain",
+      "title": "Культура онлайн",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 39,
+      "name": "prochie",
+      "title": "Прочие"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:33"
+}

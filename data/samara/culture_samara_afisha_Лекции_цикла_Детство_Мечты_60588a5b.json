@@ -1,0 +1,49 @@
+{
+  "title": "Лекции цикла «Детство. Мечты»",
+  "link": "https://www.culture.ru/events/6189583/lekcii-cikla-detstvo-mechty",
+  "event_id": 6189583,
+  "name": "lekcii-cikla-detstvo-mechty",
+  "price_min": 400,
+  "price_max": 400,
+  "is_pushkins_card": true,
+  "place_title": "Третьяковская галерея в г. Самаре",
+  "thumbnail_id": "dc3fdb12-d2e5-5e7c-b47c-22d37c448430",
+  "date_text": "До 29 мар",
+  "date_week": "",
+  "tags": [
+    {
+      "_id": 3730,
+      "name": "lekcii",
+      "title": "Лекции",
+      "isImportant": false
+    },
+    {
+      "_id": 3750,
+      "name": "iskusstvo",
+      "title": "Искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 3881,
+      "name": "russkoe-iskusstvo",
+      "title": "Русское искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 3733,
+      "name": "izobrazitelnoe-iskusstvo",
+      "title": "Изобразительное искусство",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 36,
+      "name": "obuchenie",
+      "title": "Обучение"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:30"
+}

@@ -1,0 +1,61 @@
+{
+  "title": "Опера «Евгений Онегин»",
+  "link": "https://www.culture.ru/events/128956/opera-evgenii-onegin",
+  "event_id": 128956,
+  "name": "opera-evgenii-onegin",
+  "price_min": 300,
+  "price_max": 3000,
+  "is_pushkins_card": true,
+  "place_title": "Самарский академический театр оперы и балета им. Д. Д. Шостаковича",
+  "thumbnail_id": "e6263afd-9d3c-55ff-b806-405c4ccd7827",
+  "date_text": "29 мар",
+  "date_week": "вс 18:30",
+  "tags": [
+    {
+      "_id": 3719,
+      "name": "opera",
+      "title": "Опера",
+      "isImportant": false
+    },
+    {
+      "_id": 3772,
+      "name": "klassicheskoe-iskusstvo",
+      "title": "Классическое искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 3806,
+      "name": "ispolnitelskoe-iskusstvo",
+      "title": "Исполнительское искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 4266,
+      "name": "aleksandr-pushkin",
+      "title": "Александр Пушкин",
+      "isImportant": false
+    },
+    {
+      "_id": 4303,
+      "name": "petr-chaikovskii",
+      "title": "Петр Чайковский",
+      "isImportant": false
+    },
+    {
+      "_id": 4353,
+      "name": "dostupnaya-sreda",
+      "title": "Доступная среда",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 37,
+      "name": "spektakli",
+      "title": "Спектакли"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:33"
+}

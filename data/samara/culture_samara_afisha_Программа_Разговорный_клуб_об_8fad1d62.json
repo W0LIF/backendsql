@@ -1,0 +1,24 @@
+{
+  "title": "Программа «Разговорный клуб об искусстве Speacture»",
+  "link": "https://www.culture.ru/events/6653739/programma-razgovornyi-klub-ob-iskusstve-speacture",
+  "event_id": 6653739,
+  "name": "programma-razgovornyi-klub-ob-iskusstve-speacture",
+  "price_min": 470,
+  "price_max": 470,
+  "is_pushkins_card": false,
+  "place_title": "Третьяковская галерея в г. Самаре",
+  "thumbnail_id": "f9ad84f8-143e-550f-8afb-f69111e12031",
+  "date_text": "C 21 мар",
+  "date_week": "",
+  "tags": [],
+  "genres": [
+    {
+      "_id": 33,
+      "name": "vstrechi",
+      "title": "Встречи"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:30"
+}

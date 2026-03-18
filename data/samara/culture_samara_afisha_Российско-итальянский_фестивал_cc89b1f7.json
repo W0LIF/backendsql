@@ -1,0 +1,37 @@
+{
+  "title": "Российско-итальянский фестиваль RIFF с показом фильма «Не выходи из комнаты, не совершай ошибку»",
+  "link": "https://www.culture.ru/events/6645416/rossiisko-italyanskii-festival-riff-s-pokazom-filma-ne-vykhodi-iz-komnaty-ne-sovershai-oshibku",
+  "event_id": 6645416,
+  "name": "rossiisko-italyanskii-festival-riff-s-pokazom-filma-ne-vykhodi-iz-komnaty-ne-sovershai-oshibku",
+  "price_min": 400,
+  "price_max": 400,
+  "is_pushkins_card": false,
+  "place_title": "Центр российской кинематографии «Художественный»",
+  "thumbnail_id": "3691a0a5-1b2f-56b1-bfc3-6246b4d6c2fa",
+  "date_text": "22 мар",
+  "date_week": "вс 10:00",
+  "tags": [
+    {
+      "_id": 3611,
+      "name": "komediya",
+      "title": "Комедия",
+      "isImportant": false
+    },
+    {
+      "_id": 3686,
+      "name": "kinopokaz",
+      "title": "Кинопоказ",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 66,
+      "name": "kino",
+      "title": "Кино"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:33"
+}

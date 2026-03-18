@@ -1,0 +1,61 @@
+{
+  "title": "Выставка «Детство. Мечты»",
+  "link": "https://www.culture.ru/events/6109422/vystavka-detstvo-mechty",
+  "event_id": 6109422,
+  "name": "vystavka-detstvo-mechty",
+  "price_min": 250,
+  "price_max": 500,
+  "is_pushkins_card": true,
+  "place_title": "Третьяковская галерея в г. Самаре",
+  "thumbnail_id": "313aa074-a8b5-5571-b04a-3ed0f50d1984",
+  "date_text": "До 29 мар",
+  "date_week": "",
+  "tags": [
+    {
+      "_id": 3612,
+      "name": "dlya-detei",
+      "title": "Для детей",
+      "isImportant": true
+    },
+    {
+      "_id": 3695,
+      "name": "dlya-molodezhi",
+      "title": "Для молодежи",
+      "isImportant": false
+    },
+    {
+      "_id": 3733,
+      "name": "izobrazitelnoe-iskusstvo",
+      "title": "Изобразительное искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 3750,
+      "name": "iskusstvo",
+      "title": "Искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 3772,
+      "name": "klassicheskoe-iskusstvo",
+      "title": "Классическое искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 3881,
+      "name": "russkoe-iskusstvo",
+      "title": "Русское искусство",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 34,
+      "name": "vistavki",
+      "title": "Выставки"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:30"
+}

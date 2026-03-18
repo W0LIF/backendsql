@@ -1,0 +1,55 @@
+{
+  "title": "Моноспектакль «Довлатов. Пять углов»",
+  "link": "https://www.culture.ru/events/6506154/monospektakl-dovlatov-pyat-uglov",
+  "event_id": 6506154,
+  "name": "monospektakl-dovlatov-pyat-uglov",
+  "price_min": 700,
+  "price_max": 1500,
+  "is_pushkins_card": true,
+  "place_title": "Самарская государственная филармония",
+  "thumbnail_id": "ef46fbd3-7e61-5e87-9231-be5ae9f9dbac",
+  "date_text": "27 апр",
+  "date_week": "пн 18:30",
+  "tags": [
+    {
+      "_id": 3610,
+      "name": "literatura",
+      "title": "Литература",
+      "isImportant": false
+    },
+    {
+      "_id": 3703,
+      "name": "klassicheskaya-muzyka",
+      "title": "Классическая музыка",
+      "isImportant": false
+    },
+    {
+      "_id": 3714,
+      "name": "muzyka",
+      "title": "Музыка",
+      "isImportant": false
+    },
+    {
+      "_id": 3806,
+      "name": "ispolnitelskoe-iskusstvo",
+      "title": "Исполнительское искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 4353,
+      "name": "dostupnaya-sreda",
+      "title": "Доступная среда",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 37,
+      "name": "spektakli",
+      "title": "Спектакли"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:35"
+}

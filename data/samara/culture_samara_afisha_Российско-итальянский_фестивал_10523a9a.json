@@ -1,0 +1,43 @@
+{
+  "title": "Российско-итальянский фестиваль RIFF с показом фильма «Бертолуччи и его поколение»",
+  "link": "https://www.culture.ru/events/6644624/rossiisko-italyanskii-festival-riff-s-pokazom-filma-bertoluchchi-i-ego-pokolenie",
+  "event_id": 6644624,
+  "name": "rossiisko-italyanskii-festival-riff-s-pokazom-filma-bertoluchchi-i-ego-pokolenie",
+  "price_min": 400,
+  "price_max": 400,
+  "is_pushkins_card": false,
+  "place_title": "Центр российской кинематографии «Художественный»",
+  "thumbnail_id": "bc6539df-7059-5723-8bd8-1d606ece9c50",
+  "date_text": "19 мар",
+  "date_week": "чт 10:00",
+  "tags": [
+    {
+      "_id": 3491,
+      "name": "istoriya",
+      "title": "История",
+      "isImportant": false
+    },
+    {
+      "_id": 3686,
+      "name": "kinopokaz",
+      "title": "Кинопоказ",
+      "isImportant": false
+    },
+    {
+      "_id": 3750,
+      "name": "iskusstvo",
+      "title": "Искусство",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 66,
+      "name": "kino",
+      "title": "Кино"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:30"
+}

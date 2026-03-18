@@ -1,0 +1,49 @@
+{
+  "title": "Лекции цикла «Своими словами»",
+  "link": "https://www.culture.ru/events/6502328/lekcii-cikla-svoimi-slovami",
+  "event_id": 6502328,
+  "name": "lekcii-cikla-svoimi-slovami",
+  "price_min": 250,
+  "price_max": 250,
+  "is_pushkins_card": true,
+  "place_title": "Третьяковская галерея в г. Самаре",
+  "thumbnail_id": "38c49151-cd13-5753-a739-3598ef17b7f3",
+  "date_text": "До 29 мар",
+  "date_week": "",
+  "tags": [
+    {
+      "_id": 3491,
+      "name": "istoriya",
+      "title": "История",
+      "isImportant": false
+    },
+    {
+      "_id": 3730,
+      "name": "lekcii",
+      "title": "Лекции",
+      "isImportant": false
+    },
+    {
+      "_id": 3750,
+      "name": "iskusstvo",
+      "title": "Искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 3695,
+      "name": "dlya-molodezhi",
+      "title": "Для молодежи",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 36,
+      "name": "obuchenie",
+      "title": "Обучение"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:30"
+}

@@ -1,0 +1,31 @@
+{
+  "title": "Спектакль «6 блюд из одной курицы»",
+  "link": "https://www.culture.ru/events/1262653/spektakl-6-blyud-iz-odnoi-kuricy",
+  "event_id": 1262653,
+  "name": "spektakl-6-blyud-iz-odnoi-kuricy",
+  "price_min": 400,
+  "price_max": 4000,
+  "is_pushkins_card": true,
+  "place_title": "Самарский академический театр драмы им. М. Горького",
+  "thumbnail_id": "c77e2508-5ba7-5224-b724-652c6a71f928",
+  "date_text": "05 апр",
+  "date_week": "вс 13:00",
+  "tags": [
+    {
+      "_id": 3611,
+      "name": "komediya",
+      "title": "Комедия",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 37,
+      "name": "spektakli",
+      "title": "Спектакли"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:35"
+}

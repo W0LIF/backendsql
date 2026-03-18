@@ -1,0 +1,43 @@
+{
+  "title": "Российско-итальянский фестиваль RIFF с показом фильма «История Франка и Нины»",
+  "link": "https://www.culture.ru/events/6644669/rossiisko-italyanskii-festival-riff-s-pokazom-filma-istoriya-franka-i-niny",
+  "event_id": 6644669,
+  "name": "rossiisko-italyanskii-festival-riff-s-pokazom-filma-istoriya-franka-i-niny",
+  "price_min": 400,
+  "price_max": 400,
+  "is_pushkins_card": false,
+  "place_title": "Центр российской кинематографии «Художественный»",
+  "thumbnail_id": "4538cc85-c535-52a3-9cdd-ff567456b5a6",
+  "date_text": "19 мар",
+  "date_week": "чт 10:00",
+  "tags": [
+    {
+      "_id": 3611,
+      "name": "komediya",
+      "title": "Комедия",
+      "isImportant": false
+    },
+    {
+      "_id": 3686,
+      "name": "kinopokaz",
+      "title": "Кинопоказ",
+      "isImportant": false
+    },
+    {
+      "_id": 3787,
+      "name": "drama",
+      "title": "Драма",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 66,
+      "name": "kino",
+      "title": "Кино"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:30"
+}

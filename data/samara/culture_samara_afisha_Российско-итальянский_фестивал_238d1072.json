@@ -1,0 +1,43 @@
+{
+  "title": "Российско-итальянский фестиваль RIFF с показом фильма «Берлингуэр. Великие амбиции»",
+  "link": "https://www.culture.ru/events/6638572/rossiisko-italyanskii-festival-riff-s-pokazom-filma-berlinguer-velikie-ambicii",
+  "event_id": 6638572,
+  "name": "rossiisko-italyanskii-festival-riff-s-pokazom-filma-berlinguer-velikie-ambicii",
+  "price_min": 400,
+  "price_max": 400,
+  "is_pushkins_card": false,
+  "place_title": "Центр российской кинематографии «Художественный»",
+  "thumbnail_id": "f6e0a233-a4aa-5e63-8aa0-eceb475809e1",
+  "date_text": "18 мар",
+  "date_week": "ср 10:00",
+  "tags": [
+    {
+      "_id": 3686,
+      "name": "kinopokaz",
+      "title": "Кинопоказ",
+      "isImportant": false
+    },
+    {
+      "_id": 3787,
+      "name": "drama",
+      "title": "Драма",
+      "isImportant": false
+    },
+    {
+      "_id": 3911,
+      "name": "biografiya",
+      "title": "Биография",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 66,
+      "name": "kino",
+      "title": "Кино"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:30"
+}

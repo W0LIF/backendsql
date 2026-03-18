@@ -1,0 +1,37 @@
+{
+  "title": "«Жаворонки»",
+  "link": "https://www.culture.ru/events/6630947/zhavoronki",
+  "event_id": 6630947,
+  "name": "zhavoronki",
+  "price_min": 200,
+  "price_max": 400,
+  "is_pushkins_card": false,
+  "place_title": "Самарский зоологический парк",
+  "thumbnail_id": "c419bbda-ea9b-5bc5-a654-58d37bd4837e",
+  "date_text": "23 мар",
+  "date_week": "пн 14:00",
+  "tags": [
+    {
+      "_id": 3612,
+      "name": "dlya-detei",
+      "title": "Для детей",
+      "isImportant": true
+    },
+    {
+      "_id": 3764,
+      "name": "zhivotnye",
+      "title": "Животные",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 50,
+      "name": "prazdniki",
+      "title": "Праздники"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:33"
+}

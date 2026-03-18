@@ -1,0 +1,43 @@
+{
+  "title": "Лекции цикла «Изучая детство»",
+  "link": "https://www.culture.ru/events/6599637/lekcii-cikla-izuchaya-detstvo",
+  "event_id": 6599637,
+  "name": "lekcii-cikla-izuchaya-detstvo",
+  "price_min": 330,
+  "price_max": 330,
+  "is_pushkins_card": true,
+  "place_title": "Третьяковская галерея в г. Самаре",
+  "thumbnail_id": "6bf8f19e-2c29-532c-97ff-2a248692d7de",
+  "date_text": "До 29 мар",
+  "date_week": "",
+  "tags": [
+    {
+      "_id": 3491,
+      "name": "istoriya",
+      "title": "История",
+      "isImportant": false
+    },
+    {
+      "_id": 3695,
+      "name": "dlya-molodezhi",
+      "title": "Для молодежи",
+      "isImportant": false
+    },
+    {
+      "_id": 3730,
+      "name": "lekcii",
+      "title": "Лекции",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 36,
+      "name": "obuchenie",
+      "title": "Обучение"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:30"
+}

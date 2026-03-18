@@ -1,0 +1,31 @@
+{
+  "title": "Трагедия в трёх лицах: PS",
+  "link": "https://www.culture.ru/events/5913488/tragediya-v-tryokh-licakh-ps",
+  "event_id": 5913488,
+  "name": "tragediya-v-tryokh-licakh-ps",
+  "price_min": 600,
+  "price_max": 1000,
+  "is_pushkins_card": false,
+  "place_title": "Дворец культуры железнодорожников им. Пушкина г. Самары",
+  "thumbnail_id": "56f5085a-3bf6-5ab4-984e-f67cffe87586",
+  "date_text": "26 апр",
+  "date_week": "вс 18:00",
+  "tags": [
+    {
+      "_id": 3772,
+      "name": "klassicheskoe-iskusstvo",
+      "title": "Классическое искусство",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 37,
+      "name": "spektakli",
+      "title": "Спектакли"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:35"
+}

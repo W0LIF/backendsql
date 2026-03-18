@@ -1,0 +1,43 @@
+{
+  "title": "Российско-итальянский фестиваль RIFF с показом фильма «Правда или ложь?»",
+  "link": "https://www.culture.ru/events/6646183/rossiisko-italyanskii-festival-riff-s-pokazom-filma-pravda-ili-lozh",
+  "event_id": 6646183,
+  "name": "rossiisko-italyanskii-festival-riff-s-pokazom-filma-pravda-ili-lozh",
+  "price_min": 400,
+  "price_max": 400,
+  "is_pushkins_card": false,
+  "place_title": "Центр российской кинематографии «Художественный»",
+  "thumbnail_id": "51271dd9-e121-59f5-b79f-f9611221f889",
+  "date_text": "19 мар",
+  "date_week": "чт 10:00",
+  "tags": [
+    {
+      "_id": 3620,
+      "name": "festival",
+      "title": "Фестиваль",
+      "isImportant": false
+    },
+    {
+      "_id": 3686,
+      "name": "kinopokaz",
+      "title": "Кинопоказ",
+      "isImportant": false
+    },
+    {
+      "_id": 3787,
+      "name": "drama",
+      "title": "Драма",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 66,
+      "name": "kino",
+      "title": "Кино"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:30"
+}

@@ -1,0 +1,55 @@
+{
+  "title": "Культурно-просветительский цикл о русских художниках в Третьяковской галерее в Самаре",
+  "link": "https://www.culture.ru/events/6137587/kulturno-prosvetitelskii-cikl-o-russkikh-khudozhnikakh-v-tretyakovskoi-galeree-v-samare",
+  "event_id": 6137587,
+  "name": "kulturno-prosvetitelskii-cikl-o-russkikh-khudozhnikakh-v-tretyakovskoi-galeree-v-samare",
+  "price_min": 750,
+  "price_max": 750,
+  "is_pushkins_card": true,
+  "place_title": "Третьяковская галерея в г. Самаре",
+  "thumbnail_id": "2fb05ce8-c7b4-5166-8fab-d1d795ceef98",
+  "date_text": "До 31 мая",
+  "date_week": "",
+  "tags": [
+    {
+      "_id": 3612,
+      "name": "dlya-detei",
+      "title": "Для детей",
+      "isImportant": true
+    },
+    {
+      "_id": 3750,
+      "name": "iskusstvo",
+      "title": "Искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 3881,
+      "name": "russkoe-iskusstvo",
+      "title": "Русское искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 3733,
+      "name": "izobrazitelnoe-iskusstvo",
+      "title": "Изобразительное искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 3695,
+      "name": "dlya-molodezhi",
+      "title": "Для молодежи",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 36,
+      "name": "obuchenie",
+      "title": "Обучение"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:30"
+}

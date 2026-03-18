@@ -1,0 +1,49 @@
+{
+  "title": "Концерт «Мы — единая семья»",
+  "link": "https://www.culture.ru/events/6496518/koncert-my-edinaya-semya",
+  "event_id": 6496518,
+  "name": "koncert-my-edinaya-semya",
+  "price_min": 600,
+  "price_max": 1500,
+  "is_pushkins_card": true,
+  "place_title": "Самарская государственная филармония",
+  "thumbnail_id": "f493f92b-4adf-5db9-94cd-f445d9d84952",
+  "date_text": "02 апр",
+  "date_week": "чт 18:30",
+  "tags": [
+    {
+      "_id": 3714,
+      "name": "muzyka",
+      "title": "Музыка",
+      "isImportant": false
+    },
+    {
+      "_id": 3806,
+      "name": "ispolnitelskoe-iskusstvo",
+      "title": "Исполнительское искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 3932,
+      "name": "narodnaya-kultura",
+      "title": "Народная культура",
+      "isImportant": false
+    },
+    {
+      "_id": 4353,
+      "name": "dostupnaya-sreda",
+      "title": "Доступная среда",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 35,
+      "name": "kontserti",
+      "title": "Концерты"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:33"
+}

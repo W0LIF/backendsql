@@ -1,0 +1,43 @@
+{
+  "title": "Российско-итальянский фестиваль RIFF с показом фильма «Росселлинни. Жизнь без сценария»",
+  "link": "https://www.culture.ru/events/6645152/rossiisko-italyanskii-festival-riff-s-pokazom-filma-rossellinni-zhizn-bez-scenariya",
+  "event_id": 6645152,
+  "name": "rossiisko-italyanskii-festival-riff-s-pokazom-filma-rossellinni-zhizn-bez-scenariya",
+  "price_min": 400,
+  "price_max": 400,
+  "is_pushkins_card": false,
+  "place_title": "Центр российской кинематографии «Художественный»",
+  "thumbnail_id": "e796f3cb-2e15-55d3-8e37-428e39a40040",
+  "date_text": "21 мар",
+  "date_week": "сб 10:00",
+  "tags": [
+    {
+      "_id": 3686,
+      "name": "kinopokaz",
+      "title": "Кинопоказ",
+      "isImportant": false
+    },
+    {
+      "_id": 3731,
+      "name": "tvorchestvo",
+      "title": "Творчество",
+      "isImportant": false
+    },
+    {
+      "_id": 3911,
+      "name": "biografiya",
+      "title": "Биография",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 66,
+      "name": "kino",
+      "title": "Кино"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:33"
+}

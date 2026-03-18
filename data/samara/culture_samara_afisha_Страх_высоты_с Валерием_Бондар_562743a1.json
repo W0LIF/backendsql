@@ -1,0 +1,43 @@
+{
+  "title": "«Страх высоты» с Валерием Бондаренко с показом фильма «Картины дружеских связей»",
+  "link": "https://www.culture.ru/events/6646236/strakh-vysoty-s-valeriem-bondarenko-s-pokazom-filma-kartiny-druzheskikh-svyazei",
+  "event_id": 6646236,
+  "name": "strakh-vysoty-s-valeriem-bondarenko-s-pokazom-filma-kartiny-druzheskikh-svyazei",
+  "price_min": 400,
+  "price_max": 400,
+  "is_pushkins_card": false,
+  "place_title": "Центр российской кинематографии «Художественный»",
+  "thumbnail_id": "41bdc10a-87ef-5175-8c7e-e17fcaf2bbe4",
+  "date_text": "24 мар",
+  "date_week": "вт 10:00",
+  "tags": [
+    {
+      "_id": 3611,
+      "name": "komediya",
+      "title": "Комедия",
+      "isImportant": false
+    },
+    {
+      "_id": 3686,
+      "name": "kinopokaz",
+      "title": "Кинопоказ",
+      "isImportant": false
+    },
+    {
+      "_id": 3787,
+      "name": "drama",
+      "title": "Драма",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 66,
+      "name": "kino",
+      "title": "Кино"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:33"
+}

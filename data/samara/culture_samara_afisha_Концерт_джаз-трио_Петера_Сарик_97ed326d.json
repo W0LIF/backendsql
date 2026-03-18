@@ -1,0 +1,55 @@
+{
+  "title": "Концерт джаз-трио Петера Сарика (Венгрия)",
+  "link": "https://www.culture.ru/events/6377059/koncert-dzhaz-trio-petera-sarika-vengriya",
+  "event_id": 6377059,
+  "name": "koncert-dzhaz-trio-petera-sarika-vengriya",
+  "price_min": 600,
+  "price_max": 2000,
+  "is_pushkins_card": false,
+  "place_title": "Самарская государственная филармония",
+  "thumbnail_id": "cc9ffb86-70ea-58cb-9b8e-c969647af7fc",
+  "date_text": "22 мар",
+  "date_week": "вс 19:00",
+  "tags": [
+    {
+      "_id": 3714,
+      "name": "muzyka",
+      "title": "Музыка",
+      "isImportant": false
+    },
+    {
+      "_id": 3707,
+      "name": "dzhaz",
+      "title": "Джаз",
+      "isImportant": false
+    },
+    {
+      "_id": 3703,
+      "name": "klassicheskaya-muzyka",
+      "title": "Классическая музыка",
+      "isImportant": false
+    },
+    {
+      "_id": 3806,
+      "name": "ispolnitelskoe-iskusstvo",
+      "title": "Исполнительское искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 4353,
+      "name": "dostupnaya-sreda",
+      "title": "Доступная среда",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 35,
+      "name": "kontserti",
+      "title": "Концерты"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:33"
+}

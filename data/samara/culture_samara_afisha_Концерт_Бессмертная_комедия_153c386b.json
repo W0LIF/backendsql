@@ -1,0 +1,55 @@
+{
+  "title": "Концерт «Бессмертная комедия»",
+  "link": "https://www.culture.ru/events/6523620/koncert-bessmertnaya-komediya",
+  "event_id": 6523620,
+  "name": "koncert-bessmertnaya-komediya",
+  "price_min": 700,
+  "price_max": 2000,
+  "is_pushkins_card": true,
+  "place_title": "Самарская государственная филармония",
+  "thumbnail_id": "593d63fb-3e20-5c53-899d-ae2b949037e4",
+  "date_text": "20 апр",
+  "date_week": "пн 18:30",
+  "tags": [
+    {
+      "_id": 3610,
+      "name": "literatura",
+      "title": "Литература",
+      "isImportant": false
+    },
+    {
+      "_id": 3703,
+      "name": "klassicheskaya-muzyka",
+      "title": "Классическая музыка",
+      "isImportant": false
+    },
+    {
+      "_id": 3714,
+      "name": "muzyka",
+      "title": "Музыка",
+      "isImportant": false
+    },
+    {
+      "_id": 3806,
+      "name": "ispolnitelskoe-iskusstvo",
+      "title": "Исполнительское искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 4353,
+      "name": "dostupnaya-sreda",
+      "title": "Доступная среда",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 35,
+      "name": "kontserti",
+      "title": "Концерты"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:35"
+}

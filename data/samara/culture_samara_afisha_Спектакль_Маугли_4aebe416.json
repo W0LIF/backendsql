@@ -1,0 +1,61 @@
+{
+  "title": "Спектакль «Маугли»",
+  "link": "https://www.culture.ru/events/867540/spektakl-maugli",
+  "event_id": 867540,
+  "name": "spektakl-maugli",
+  "price_min": 500,
+  "price_max": 800,
+  "is_pushkins_card": true,
+  "place_title": "Самарский театр юного зрителя «СамАрт»",
+  "thumbnail_id": "3028fa7a-6ae3-586e-a903-a54bd2e6dcef",
+  "date_text": "23 апр",
+  "date_week": "чт 18:00",
+  "tags": [
+    {
+      "_id": 3612,
+      "name": "dlya-detei",
+      "title": "Для детей",
+      "isImportant": true
+    },
+    {
+      "_id": 3709,
+      "name": "plasticheskii-spektakl",
+      "title": "Пластический спектакль",
+      "isImportant": false
+    },
+    {
+      "_id": 3695,
+      "name": "dlya-molodezhi",
+      "title": "Для молодежи",
+      "isImportant": false
+    },
+    {
+      "_id": 3832,
+      "name": "skazka",
+      "title": "Сказка",
+      "isImportant": false
+    },
+    {
+      "_id": 4353,
+      "name": "dostupnaya-sreda",
+      "title": "Доступная среда",
+      "isImportant": false
+    },
+    {
+      "_id": 24554,
+      "name": "uchastnikam-svo",
+      "title": "Участникам СВО",
+      "isImportant": true
+    }
+  ],
+  "genres": [
+    {
+      "_id": 37,
+      "name": "spektakli",
+      "title": "Спектакли"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:35"
+}

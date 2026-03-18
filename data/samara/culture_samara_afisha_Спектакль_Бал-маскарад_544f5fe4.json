@@ -1,0 +1,49 @@
+{
+  "title": "Спектакль «Бал-маскарад»",
+  "link": "https://www.culture.ru/events/755553/spektakl-bal-maskarad",
+  "event_id": 755553,
+  "name": "spektakl-bal-maskarad",
+  "price_min": 300,
+  "price_max": 3500,
+  "is_pushkins_card": true,
+  "place_title": "Самарский академический театр оперы и балета им. Д. Д. Шостаковича",
+  "thumbnail_id": "4932f09e-b1a6-5929-ae6f-e3e05ebeb7b4",
+  "date_text": "11 апр",
+  "date_week": "сб 17:00",
+  "tags": [
+    {
+      "_id": 3703,
+      "name": "klassicheskaya-muzyka",
+      "title": "Классическая музыка",
+      "isImportant": false
+    },
+    {
+      "_id": 3719,
+      "name": "opera",
+      "title": "Опера",
+      "isImportant": false
+    },
+    {
+      "_id": 3772,
+      "name": "klassicheskoe-iskusstvo",
+      "title": "Классическое искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 3787,
+      "name": "drama",
+      "title": "Драма",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 37,
+      "name": "spektakli",
+      "title": "Спектакли"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:35"
+}

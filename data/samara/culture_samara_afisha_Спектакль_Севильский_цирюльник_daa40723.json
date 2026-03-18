@@ -1,0 +1,43 @@
+{
+  "title": "Спектакль «Севильский цирюльник»",
+  "link": "https://www.culture.ru/events/58335/spektakl-sevilskii-ciryulnik",
+  "event_id": 58335,
+  "name": "spektakl-sevilskii-ciryulnik",
+  "price_min": 300,
+  "price_max": 3000,
+  "is_pushkins_card": true,
+  "place_title": "Самарский академический театр оперы и балета им. Д. Д. Шостаковича",
+  "thumbnail_id": "3fa12a26-3cca-5388-9304-f7a83eff4b9b",
+  "date_text": "08 апр",
+  "date_week": "ср 18:30",
+  "tags": [
+    {
+      "_id": 3719,
+      "name": "opera",
+      "title": "Опера",
+      "isImportant": false
+    },
+    {
+      "_id": 4353,
+      "name": "dostupnaya-sreda",
+      "title": "Доступная среда",
+      "isImportant": false
+    },
+    {
+      "_id": 5852,
+      "name": "vokalnoe-iskusstvo",
+      "title": "Вокальное искусство",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 37,
+      "name": "spektakli",
+      "title": "Спектакли"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:35"
+}

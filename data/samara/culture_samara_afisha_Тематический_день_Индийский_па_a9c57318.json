@@ -1,0 +1,37 @@
+{
+  "title": "«Тематический день. Индийский павлин»",
+  "link": "https://www.culture.ru/events/6630736/tematicheskii-den-indiiskii-pavlin",
+  "event_id": 6630736,
+  "name": "tematicheskii-den-indiiskii-pavlin",
+  "price_min": 200,
+  "price_max": 400,
+  "is_pushkins_card": false,
+  "place_title": null,
+  "thumbnail_id": "d26815c1-e323-5b1a-a10f-92be66cfb42d",
+  "date_text": "",
+  "date_week": "",
+  "tags": [
+    {
+      "_id": 3612,
+      "name": "dlya-detei",
+      "title": "Для детей",
+      "isImportant": true
+    },
+    {
+      "_id": 3764,
+      "name": "zhivotnye",
+      "title": "Животные",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 39,
+      "name": "prochie",
+      "title": "Прочие"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:30"
+}

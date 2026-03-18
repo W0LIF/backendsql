@@ -1,0 +1,49 @@
+{
+  "title": "Концерт Академического симфонического оркестра",
+  "link": "https://www.culture.ru/events/6378074/koncert-akademicheskogo-simfonicheskogo-orkestra",
+  "event_id": 6378074,
+  "name": "koncert-akademicheskogo-simfonicheskogo-orkestra",
+  "price_min": 1000,
+  "price_max": 1700,
+  "is_pushkins_card": true,
+  "place_title": "Самарская государственная филармония",
+  "thumbnail_id": "177d1c9b-b3bb-5ea8-bb8b-24810d272a75",
+  "date_text": "27 мар",
+  "date_week": "пт 18:30",
+  "tags": [
+    {
+      "_id": 3714,
+      "name": "muzyka",
+      "title": "Музыка",
+      "isImportant": false
+    },
+    {
+      "_id": 3703,
+      "name": "klassicheskaya-muzyka",
+      "title": "Классическая музыка",
+      "isImportant": false
+    },
+    {
+      "_id": 3806,
+      "name": "ispolnitelskoe-iskusstvo",
+      "title": "Исполнительское искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 4353,
+      "name": "dostupnaya-sreda",
+      "title": "Доступная среда",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 35,
+      "name": "kontserti",
+      "title": "Концерты"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:33"
+}

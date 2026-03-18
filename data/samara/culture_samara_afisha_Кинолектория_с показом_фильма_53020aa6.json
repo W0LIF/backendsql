@@ -1,0 +1,43 @@
+{
+  "title": "Кинолектория с показом фильма «Крым. Перерождение»",
+  "link": "https://www.culture.ru/events/6638434/kinolektoriya-s-pokazom-filma-krym-pererozhdenie",
+  "event_id": 6638434,
+  "name": "kinolektoriya-s-pokazom-filma-krym-pererozhdenie",
+  "price_min": 0,
+  "price_max": 0,
+  "is_pushkins_card": false,
+  "place_title": "Центр российской кинематографии «Художественный»",
+  "thumbnail_id": "847aa845-c4a9-51d1-a5d1-2976eb6a483a",
+  "date_text": "18 мар",
+  "date_week": "ср 10:00",
+  "tags": [
+    {
+      "_id": 3491,
+      "name": "istoriya",
+      "title": "История",
+      "isImportant": false
+    },
+    {
+      "_id": 3685,
+      "name": "besplatno",
+      "title": "Бесплатно",
+      "isImportant": false
+    },
+    {
+      "_id": 3695,
+      "name": "dlya-molodezhi",
+      "title": "Для молодежи",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 66,
+      "name": "kino",
+      "title": "Кино"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:30"
+}

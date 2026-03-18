@@ -1,0 +1,31 @@
+{
+  "title": "Спектакль «Чайки»",
+  "link": "https://www.culture.ru/events/6566539/spektakl-chaiki",
+  "event_id": 6566539,
+  "name": "spektakl-chaiki",
+  "price_min": 400,
+  "price_max": 2200,
+  "is_pushkins_card": true,
+  "place_title": "Самарский академический театр драмы им. М. Горького",
+  "thumbnail_id": "061e6e3a-ccbd-50bb-9a4c-5be70a6fdb0b",
+  "date_text": "25 апр",
+  "date_week": "сб 18:00",
+  "tags": [
+    {
+      "_id": 3620,
+      "name": "festival",
+      "title": "Фестиваль",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 37,
+      "name": "spektakli",
+      "title": "Спектакли"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:35"
+}

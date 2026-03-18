@@ -1,0 +1,49 @@
+{
+  "title": "Концерт Александра Гиндина и Екатерины Мечетиной",
+  "link": "https://www.culture.ru/events/6496558/koncert-aleksandra-gindina-i-ekateriny-mechetinoi",
+  "event_id": 6496558,
+  "name": "koncert-aleksandra-gindina-i-ekateriny-mechetinoi",
+  "price_min": 1500,
+  "price_max": 3000,
+  "is_pushkins_card": true,
+  "place_title": "Самарская государственная филармония",
+  "thumbnail_id": "9200386d-1a15-58e5-9eeb-3353aa07da2e",
+  "date_text": "14 апр",
+  "date_week": "вт 18:30",
+  "tags": [
+    {
+      "_id": 3703,
+      "name": "klassicheskaya-muzyka",
+      "title": "Классическая музыка",
+      "isImportant": false
+    },
+    {
+      "_id": 3772,
+      "name": "klassicheskoe-iskusstvo",
+      "title": "Классическое искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 3806,
+      "name": "ispolnitelskoe-iskusstvo",
+      "title": "Исполнительское искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 4353,
+      "name": "dostupnaya-sreda",
+      "title": "Доступная среда",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 35,
+      "name": "kontserti",
+      "title": "Концерты"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:35"
+}

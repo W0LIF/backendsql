@@ -1,0 +1,49 @@
+{
+  "title": "Концерт «Юбилей на бис!»",
+  "link": "https://www.culture.ru/events/6549197/koncert-yubilei-na-bis",
+  "event_id": 6549197,
+  "name": "koncert-yubilei-na-bis",
+  "price_min": 600,
+  "price_max": 1500,
+  "is_pushkins_card": false,
+  "place_title": "Самарская государственная филармония",
+  "thumbnail_id": "ec5bbe7e-1155-5af6-8262-ced79b141f5a",
+  "date_text": "15 апр",
+  "date_week": "ср 19:00",
+  "tags": [
+    {
+      "_id": 3703,
+      "name": "klassicheskaya-muzyka",
+      "title": "Классическая музыка",
+      "isImportant": false
+    },
+    {
+      "_id": 3714,
+      "name": "muzyka",
+      "title": "Музыка",
+      "isImportant": false
+    },
+    {
+      "_id": 3806,
+      "name": "ispolnitelskoe-iskusstvo",
+      "title": "Исполнительское искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 4353,
+      "name": "dostupnaya-sreda",
+      "title": "Доступная среда",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 35,
+      "name": "kontserti",
+      "title": "Концерты"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:35"
+}

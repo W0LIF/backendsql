@@ -1,0 +1,43 @@
+{
+  "title": "Трагедия «Дом Бернарды Альбы»",
+  "link": "https://www.culture.ru/events/5916736/tragediya-dom-bernardy-alby",
+  "event_id": 5916736,
+  "name": "tragediya-dom-bernardy-alby",
+  "price_min": 500,
+  "price_max": 1000,
+  "is_pushkins_card": false,
+  "place_title": "Дворец культуры железнодорожников им. Пушкина г. Самары",
+  "thumbnail_id": "ff9762ad-a4ea-58eb-a0fd-3eec9e6ea0d6",
+  "date_text": "11 апр",
+  "date_week": "сб 18:00",
+  "tags": [
+    {
+      "_id": 3491,
+      "name": "istoriya",
+      "title": "История",
+      "isImportant": false
+    },
+    {
+      "_id": 3772,
+      "name": "klassicheskoe-iskusstvo",
+      "title": "Классическое искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 3836,
+      "name": "premera",
+      "title": "Премьера",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 37,
+      "name": "spektakli",
+      "title": "Спектакли"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:35"
+}

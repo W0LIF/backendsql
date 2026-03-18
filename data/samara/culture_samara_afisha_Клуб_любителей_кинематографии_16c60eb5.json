@@ -1,0 +1,43 @@
+{
+  "title": "Клуб любителей кинематографии «Треугольник» с показом фильма «Прощай кино!»",
+  "link": "https://www.culture.ru/events/6646333/klub-lyubitelei-kinematografii-treugolnik-s-pokazom-filma-proshai-kino",
+  "event_id": 6646333,
+  "name": "klub-lyubitelei-kinematografii-treugolnik-s-pokazom-filma-proshai-kino",
+  "price_min": 400,
+  "price_max": 400,
+  "is_pushkins_card": false,
+  "place_title": "Центр российской кинематографии «Художественный»",
+  "thumbnail_id": "09c33dca-dd2e-5986-930f-7246ad56f4ce",
+  "date_text": "26 мар",
+  "date_week": "чт 10:00",
+  "tags": [
+    {
+      "_id": 3686,
+      "name": "kinopokaz",
+      "title": "Кинопоказ",
+      "isImportant": false
+    },
+    {
+      "_id": 3787,
+      "name": "drama",
+      "title": "Драма",
+      "isImportant": false
+    },
+    {
+      "_id": 3823,
+      "name": "klub-po-interesam",
+      "title": "Клуб по интересам",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 66,
+      "name": "kino",
+      "title": "Кино"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:33"
+}

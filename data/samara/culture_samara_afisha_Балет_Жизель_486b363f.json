@@ -1,0 +1,49 @@
+{
+  "title": "Балет «Жизель»",
+  "link": "https://www.culture.ru/events/1295653/balet-zhizel",
+  "event_id": 1295653,
+  "name": "balet-zhizel",
+  "price_min": 300,
+  "price_max": 3000,
+  "is_pushkins_card": true,
+  "place_title": "Самарский академический театр оперы и балета им. Д. Д. Шостаковича",
+  "thumbnail_id": "d820166b-811e-5d06-a2b6-f80ce793d97e",
+  "date_text": "18 мар",
+  "date_week": "ср 18:30",
+  "tags": [
+    {
+      "_id": 3772,
+      "name": "klassicheskoe-iskusstvo",
+      "title": "Классическое искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 3528,
+      "name": "balet",
+      "title": "Балет",
+      "isImportant": false
+    },
+    {
+      "_id": 3703,
+      "name": "klassicheskaya-muzyka",
+      "title": "Классическая музыка",
+      "isImportant": false
+    },
+    {
+      "_id": 3695,
+      "name": "dlya-molodezhi",
+      "title": "Для молодежи",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 37,
+      "name": "spektakli",
+      "title": "Спектакли"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:30"
+}

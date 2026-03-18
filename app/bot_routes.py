@@ -12,7 +12,12 @@ from .schemas import BotQueryRequest, BotQueryResponse, HistoryResponse
 from .auth_routes import get_current_user
 from .database import get_database
 from .achievement_routes import check_and_unlock_achievements
+from pydantic import BaseModel
 
+class BotQueryRequest(BaseModel):
+    query: str
+    city: str  # Сюда фронт пришлет 'spb', 'moscow' или 'samara'
+    
 router = APIRouter(prefix="/bot", tags=["bot"])
 
 # LANGCHAIN 
@@ -32,10 +37,16 @@ def load_all_city_docs():
                         try:
                             with open(os.path.join(city_path, file), 'r', encoding='utf-8') as f:
                                 data = json.load(f)
-                                text = f"{data.get('title', '')} {data.get('content', '')}"
-                                # Добавляем город в метаданные, чтобы ИИ знал, откуда инфа
+                                
+                                title = data.get('title', '')
+                                # Проверяем все возможные поля текста
+                                body = data.get('main_content') or data.get('content') or data.get('description') or ''
+                                text = f"{title} {body}"
+                                
+                                # Добавляем город в метаданные
                                 documents.append(Document(page_content=text, metadata={"city": city_folder}))
-                        except Exception:
+                        except Exception as e:
+                            print(f"Ошибка в файле {file}: {e}")
                             continue
     return documents
 
@@ -44,45 +55,72 @@ all_docs = load_all_city_docs()
 retriever = BM25Retriever.from_documents(all_docs) if all_docs else None
 
 # ключ
-llm = GigaChat(credentials="MDE5Y2ZkOTgtNjc2Yy03NDhkLWI5NWMtYmNlZDBmMmVkMmY5OjFjZDY4ZWNhLWQzZmEtNDFkMS04NjMxLTM2OGI5NDg4ZGQzOA==", 
+llm = GigaChat(credentials="MDE5ZDAxYWYtYjRiNS03NjkyLWE0YWUtMzUyOTc4MzNmMzNjOmU4MzIyNGI5LTk2MDItNDNkZC04NzQwLTg2YmYyNDI4OGQ4Mg==", 
     verify_ssl_certs=False,
     scope="GIGACHAT_API_PERS")
 
-async def get_ai_response(query: str) -> str:
-    """Функция поиска по всем городам и генерации ответа ИИ"""
+async def get_ai_response(query: str, city: str) -> str:
     if not retriever:
         return "Извините, база данных городов временно недоступна."
     
     try:
-        # Ищем 5 самых подходящих кусков текста по всем городам
-        search_results = retriever.get_relevant_documents(query)
-        context = "\n\n".join([f"[{doc.metadata['city']}]: {doc.page_content}" for doc in search_results[:5]])
+        # 1. Ищем документы ТОЛЬКО для конкретного города
+        # Передаем filter в search_kwargs
+        # Сначала получаем документы потом фильтруем
+        all_relevant = retriever.get_relevant_documents(query, k=20)
+
+        search_results = [
+            doc for doc in all_relevant 
+            if doc.metadata.get("city") == city
+        ][:5] 
+        # Из 20 документов оставляем 5 подходящих
         
+        # 2. Собираем контекст (проверяем, что нашли хоть что-то)
+        if not search_results:
+            return f"К сожалению, у меня пока нет информации по вашему запросу в городе {city}."
+
+        context = "\n\n".join([
+            f"Источник ({doc.metadata.get('site', 'сайт')}): {doc.page_content}" 
+            for doc in search_results[:5]
+        ])
+        
+        # ОБНОВЛЕННЫЙ ПРОМТ, если надо поменяй его олег, от промпта сильно зависят ответы иишки
         prompt = (
-            f"Ты — умный городской ассистент по России. Твоя задача — отвечать на вопросы пользователей, "
-            f"используя предоставленные данные по городам (Санкт-Петербург, Москва, Самара).\n\n"
+            f"Ты — официальный цифровой помощник по городам России. Твоя специализация сейчас: {city}.\n"
+            f"ИНСТРУКЦИЯ:\n"
+            f"1. Используй ТОЛЬКО предоставленный контекст ниже для ответа.\n"
+            f"2. Если в данных нет ответа, вежливо скажи, что пока не владеешь этой информацией по городу {city}.\n"
+            f"3. Пиши кратко, вежливо, структурировано (используй списки) и дружелюбно.\n"
+            f"4. Ссылайся на конкретные адреса или сайты, если они есть в тексте.\n"
+            f"5. Если пользователь спрашивает 'куда сходить', 'что посмотреть' или 'где погулять' в {city}, "
+            f"обязательно предлагай варианты из секций: выставки, экскурсии, события, музеи и парки, фестивали, развлечения, афиши, выступления."
+            f"которые есть в данных ниже.\n"
+            f"6. Если пользователь спрашивает, как оформить документ, ищи МФЦ.\n"
+            f"7. В ответе ЗАПРЕЩЕНО использовать символы звездочек для выделения текста. \n"
             f"ДАННЫЕ ИЗ БАЗЫ:\n{context}\n\n"
             f"ВОПРОС ПОЛЬЗОВАТЕЛЯ: {query}\n\n"
-            f"ОТВЕТ (будь вежлив и конкретен):"
+            f"ТВОЙ ОТВЕТ:"
         )
         
         res = llm.invoke(prompt)
         return res.content
+
     except Exception as e:
-        return f"Ошибка: {str(e)}. Запрос: {query}"
+        return f"Ошибка: {str(e)}"
     
 @router.post("/query", response_model=BotQueryResponse)
-async def bot_query(request: BotQueryRequest):
-# async def bot_query(
-#     request: BotQueryRequest,
-#     current_user: dict = Depends(get_current_user)
-# ):
+async def bot_query(
+    request: BotQueryRequest,
+    current_user: dict = Depends(get_current_user) # 1. Возвращаем авторизацию
+):
     db = get_database()
-    # user_id = str(current_user["_id"])
-    user_id = "69b9dc7f7a4b6d2eff43d4ba"
+    user_id = str(current_user["_id"])
+
+    # заглушка
+    # user_id = "69b9dc7f7a4b6d2eff43d4ba"
     
     # замена заглушки на ии
-    response_text = await get_ai_response(request.query)
+    response_text = await get_ai_response(request.query, request.city)
     
     # Сохраняем в историю
     history_entry = {
@@ -155,13 +193,17 @@ async def bot_query(request: BotQueryRequest):
 
 @router.get("/history", response_model=dict)
 async def get_history(
-    current_user: dict = Depends(get_current_user),
+    current_user: dict = Depends(get_current_user), # закоментить если нужно для изменений
     limit: int = 50
 ):
     db = get_database()
+
+    # тоже закоментить если нужно для тестов
+    
     history = await db.history.find(
         {"user_id": str(current_user["_id"])}
     ).sort("created_at", -1).limit(limit).to_list(None)
+    # history = await db.history.find().sort("created_at", -1).limit(limit).to_list(None)
     
     return {
         "history": [
@@ -178,5 +220,5 @@ async def get_history(
 @router.post("/test-query") # Новый путь специально для теста
 async def test_bot_query(request: BotQueryRequest):
     # Твоя логика поиска и ИИ
-    response_text = await get_ai_response(request.query)
+    response_text = await get_ai_response(request.query, request.city)
     return {"status": "success", "response": response_text}

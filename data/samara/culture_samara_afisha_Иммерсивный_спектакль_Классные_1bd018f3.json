@@ -1,0 +1,55 @@
+{
+  "title": "Иммерсивный спектакль «Классные легенды»",
+  "link": "https://www.culture.ru/events/6353487/immersivnyi-spektakl-klassnye-legendy",
+  "event_id": 6353487,
+  "name": "immersivnyi-spektakl-klassnye-legendy",
+  "price_min": 2200,
+  "price_max": 2200,
+  "is_pushkins_card": true,
+  "place_title": "Третьяковская галерея в г. Самаре",
+  "thumbnail_id": "50235612-79d5-593d-b045-34adce8156fa",
+  "date_text": "До 29 мар",
+  "date_week": "",
+  "tags": [
+    {
+      "_id": 3612,
+      "name": "dlya-detei",
+      "title": "Для детей",
+      "isImportant": true
+    },
+    {
+      "_id": 3750,
+      "name": "iskusstvo",
+      "title": "Искусство",
+      "isImportant": false
+    },
+    {
+      "_id": 3836,
+      "name": "premera",
+      "title": "Премьера",
+      "isImportant": false
+    },
+    {
+      "_id": 3695,
+      "name": "dlya-molodezhi",
+      "title": "Для молодежи",
+      "isImportant": false
+    },
+    {
+      "_id": 4208,
+      "name": "teatralizovannoe-predstavlenie",
+      "title": "Театрализованное представление",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 37,
+      "name": "spektakli",
+      "title": "Спектакли"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:30"
+}

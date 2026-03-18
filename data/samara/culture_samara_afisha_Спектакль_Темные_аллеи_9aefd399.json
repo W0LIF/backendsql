@@ -1,0 +1,37 @@
+{
+  "title": "Спектакль «Темные аллеи»",
+  "link": "https://www.culture.ru/events/1289970/spektakl-temnye-allei",
+  "event_id": 1289970,
+  "name": "spektakl-temnye-allei",
+  "price_min": 500,
+  "price_max": 1100,
+  "is_pushkins_card": true,
+  "place_title": "Самарский театр юного зрителя «СамАрт»",
+  "thumbnail_id": "7907fedd-8c63-557d-a694-1ac445476279",
+  "date_text": "10 апр",
+  "date_week": "пт 18:00",
+  "tags": [
+    {
+      "_id": 4353,
+      "name": "dostupnaya-sreda",
+      "title": "Доступная среда",
+      "isImportant": false
+    },
+    {
+      "_id": 5850,
+      "name": "ivan-bunin",
+      "title": "Иван Бунин",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 37,
+      "name": "spektakli",
+      "title": "Спектакли"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:35"
+}

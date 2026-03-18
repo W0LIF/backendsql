@@ -1,0 +1,49 @@
+{
+  "title": "Семинар «Многофункциональные дидактические пособия…»",
+  "link": "https://www.culture.ru/events/6619265/seminar-mnogofunkcionalnye-didakticheskie-posobiya",
+  "event_id": 6619265,
+  "name": "seminar-mnogofunkcionalnye-didakticheskie-posobiya",
+  "price_min": 0,
+  "price_max": 0,
+  "is_pushkins_card": false,
+  "place_title": "Самарская библиотека для слепых на ул. Никитинской",
+  "thumbnail_id": "9383e1f8-c330-549e-837d-e17a6796bf87",
+  "date_text": "19 мар",
+  "date_week": "чт 10:00",
+  "tags": [
+    {
+      "_id": 3610,
+      "name": "literatura",
+      "title": "Литература",
+      "isImportant": false
+    },
+    {
+      "_id": 3685,
+      "name": "besplatno",
+      "title": "Бесплатно",
+      "isImportant": false
+    },
+    {
+      "_id": 3724,
+      "name": "bibliotechnoe-delo",
+      "title": "Библиотечное дело",
+      "isImportant": false
+    },
+    {
+      "_id": 3986,
+      "name": "knigi",
+      "title": "Книги",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 36,
+      "name": "obuchenie",
+      "title": "Обучение"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:30"
+}

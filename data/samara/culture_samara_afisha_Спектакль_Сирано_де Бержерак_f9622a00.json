@@ -1,0 +1,31 @@
+{
+  "title": "Спектакль «Сирано де Бержерак»",
+  "link": "https://www.culture.ru/events/6544775/spektakl-sirano-de-berzherak",
+  "event_id": 6544775,
+  "name": "spektakl-sirano-de-berzherak",
+  "price_min": 400,
+  "price_max": 2200,
+  "is_pushkins_card": true,
+  "place_title": "Самарский академический театр драмы им. М. Горького",
+  "thumbnail_id": "abb951fd-9ebf-59b5-87db-07f8c6ebae9e",
+  "date_text": "24 апр",
+  "date_week": "пт 18:30",
+  "tags": [
+    {
+      "_id": 3620,
+      "name": "festival",
+      "title": "Фестиваль",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 37,
+      "name": "spektakli",
+      "title": "Спектакли"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:35"
+}

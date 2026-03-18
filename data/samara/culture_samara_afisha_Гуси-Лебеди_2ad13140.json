@@ -1,0 +1,43 @@
+{
+  "title": "Гуси-Лебеди",
+  "link": "https://www.culture.ru/events/1590039/gusi-lebedi",
+  "event_id": 1590039,
+  "name": "gusi-lebedi",
+  "price_min": 500,
+  "price_max": 500,
+  "is_pushkins_card": false,
+  "place_title": "Самарский театр кукол",
+  "thumbnail_id": "56943b33-4b2f-5504-976b-2187dcf32b4a",
+  "date_text": "29 апр",
+  "date_week": "ср 18:00",
+  "tags": [
+    {
+      "_id": 3612,
+      "name": "dlya-detei",
+      "title": "Для детей",
+      "isImportant": true
+    },
+    {
+      "_id": 3711,
+      "name": "kukolnyi-spektakl",
+      "title": "Кукольный спектакль",
+      "isImportant": false
+    },
+    {
+      "_id": 4353,
+      "name": "dostupnaya-sreda",
+      "title": "Доступная среда",
+      "isImportant": false
+    }
+  ],
+  "genres": [
+    {
+      "_id": 37,
+      "name": "spektakli",
+      "title": "Спектакли"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:35"
+}

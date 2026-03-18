@@ -1,0 +1,49 @@
+{
+  "title": "Спектакль «Товар — любовь»",
+  "link": "https://www.culture.ru/events/5797385/spektakl-tovar-lyubov",
+  "event_id": 5797385,
+  "name": "spektakl-tovar-lyubov",
+  "price_min": 600,
+  "price_max": 2000,
+  "is_pushkins_card": true,
+  "place_title": "Самарский театр юного зрителя «СамАрт»",
+  "thumbnail_id": "a75a76bd-f77b-562e-a2fc-97f8593af90d",
+  "date_text": "18 апр",
+  "date_week": "сб 17:00",
+  "tags": [
+    {
+      "_id": 3845,
+      "name": "tragikomediya",
+      "title": "Трагикомедия",
+      "isImportant": false
+    },
+    {
+      "_id": 3836,
+      "name": "premera",
+      "title": "Премьера",
+      "isImportant": false
+    },
+    {
+      "_id": 4353,
+      "name": "dostupnaya-sreda",
+      "title": "Доступная среда",
+      "isImportant": false
+    },
+    {
+      "_id": 24554,
+      "name": "uchastnikam-svo",
+      "title": "Участникам СВО",
+      "isImportant": true
+    }
+  ],
+  "genres": [
+    {
+      "_id": 37,
+      "name": "spektakli",
+      "title": "Спектакли"
+    }
+  ],
+  "city": "samara",
+  "site": "culture_samara_afisha",
+  "parsed_timestamp": "2026-03-18 12:48:35"
+}
