@@ -121,6 +121,7 @@ class StatsResponse(BaseModel):
 
 class BotQueryRequest(BaseModel):
     query: str
+    city: str = "samara"
 
 class BotQueryResponse(BaseModel):
     response: str

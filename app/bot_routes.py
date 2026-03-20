@@ -8,16 +8,12 @@ from langchain_community.retrievers import BM25Retriever
 from langchain_core.documents import Document
 from langchain_community.chat_models import GigaChat
 
+# ✅ Импортируем из schemas, а не переопределяем
 from .schemas import BotQueryRequest, BotQueryResponse, HistoryResponse
 from .auth_routes import get_current_user
 from .database import get_database
 from .achievement_routes import check_and_unlock_achievements
-from pydantic import BaseModel
 
-class BotQueryRequest(BaseModel):
-    query: str
-    city: str  # Сюда фронт пришлет 'spb', 'moscow' или 'samara'
-    
 router = APIRouter(prefix="/bot", tags=["bot"])
 
 # LANGCHAIN 
@@ -28,7 +24,6 @@ def load_all_city_docs():
     documents = []
     
     if os.path.exists(base_path):
-        # Проходим по всем подпапкам (piter, moscow, samara)
         for city_folder in os.listdir(base_path):
             city_path = os.path.join(base_path, city_folder)
             if os.path.isdir(city_path):
@@ -39,43 +34,36 @@ def load_all_city_docs():
                                 data = json.load(f)
                                 
                                 title = data.get('title', '')
-                                # Проверяем все возможные поля текста
                                 body = data.get('main_content') or data.get('content') or data.get('description') or ''
                                 text = f"{title} {body}"
                                 
-                                # Добавляем город в метаданные
                                 documents.append(Document(page_content=text, metadata={"city": city_folder}))
                         except Exception as e:
                             print(f"Ошибка в файле {file}: {e}")
                             continue
     return documents
 
-# Инициализация (сработает один раз при запуске сервера)
 all_docs = load_all_city_docs()
 retriever = BM25Retriever.from_documents(all_docs) if all_docs else None
 
-# ключ
-llm = GigaChat(credentials="MDE5ZDAxYWYtYjRiNS03NjkyLWE0YWUtMzUyOTc4MzNmMzNjOmU4MzIyNGI5LTk2MDItNDNkZC04NzQwLTg2YmYyNDI4OGQ4Mg==", 
+llm = GigaChat(
+    credentials="MDE5ZDAxYWYtYjRiNS03NjkyLWE0YWUtMzUyOTc4MzNmMzNjOmU4MzIyNGI5LTk2MDItNDNkZC04NzQwLTg2YmYyNDI4OGQ4Mg==", 
     verify_ssl_certs=False,
-    scope="GIGACHAT_API_PERS")
+    scope="GIGACHAT_API_PERS"
+)
 
 async def get_ai_response(query: str, city: str) -> str:
     if not retriever:
         return "Извините, база данных городов временно недоступна."
     
     try:
-        # 1. Ищем документы ТОЛЬКО для конкретного города
-        # Передаем filter в search_kwargs
-        # Сначала получаем документы потом фильтруем
         all_relevant = retriever.get_relevant_documents(query, k=20)
 
         search_results = [
             doc for doc in all_relevant 
             if doc.metadata.get("city") == city
-        ][:5] 
-        # Из 20 документов оставляем 5 подходящих
+        ][:5]
         
-        # 2. Собираем контекст (проверяем, что нашли хоть что-то)
         if not search_results:
             return f"К сожалению, у меня пока нет информации по вашему запросу в городе {city}."
 
@@ -84,7 +72,6 @@ async def get_ai_response(query: str, city: str) -> str:
             for doc in search_results[:5]
         ])
         
-        # ОБНОВЛЕННЫЙ ПРОМТ, если надо поменяй его олег, от промпта сильно зависят ответы иишки
         prompt = (
             f"Ты — официальный цифровой помощник по городам России. Твоя специализация сейчас: {city}.\n"
             f"ИНСТРУКЦИЯ:\n"
@@ -111,15 +98,11 @@ async def get_ai_response(query: str, city: str) -> str:
 @router.post("/query", response_model=BotQueryResponse)
 async def bot_query(
     request: BotQueryRequest,
-    current_user: dict = Depends(get_current_user) # 1. Возвращаем авторизацию
+    current_user: dict = Depends(get_current_user)
 ):
     db = get_database()
     user_id = str(current_user["_id"])
-
-    # заглушка
-    # user_id = "69b9dc7f7a4b6d2eff43d4ba"
     
-    # замена заглушки на ии
     response_text = await get_ai_response(request.query, request.city)
     
     # Сохраняем в историю
@@ -193,17 +176,14 @@ async def bot_query(
 
 @router.get("/history", response_model=dict)
 async def get_history(
-    current_user: dict = Depends(get_current_user), # закоментить если нужно для изменений
+    current_user: dict = Depends(get_current_user),
     limit: int = 50
 ):
     db = get_database()
-
-    # тоже закоментить если нужно для тестов
     
     history = await db.history.find(
         {"user_id": str(current_user["_id"])}
     ).sort("created_at", -1).limit(limit).to_list(None)
-    # history = await db.history.find().sort("created_at", -1).limit(limit).to_list(None)
     
     return {
         "history": [
@@ -215,10 +195,7 @@ async def get_history(
         ]
     }
 
-# Тест
-
-@router.post("/test-query") # Новый путь специально для теста
+@router.post("/test-query")
 async def test_bot_query(request: BotQueryRequest):
-    # Твоя логика поиска и ИИ
     response_text = await get_ai_response(request.query, request.city)
     return {"status": "success", "response": response_text}
