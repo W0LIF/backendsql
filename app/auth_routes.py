@@ -6,6 +6,7 @@ from passlib.context import CryptContext
 from typing import Optional
 import random
 import string
+from bson import ObjectId
 
 from .models import (
     UserCreate, UserLogin, TokenResponse, UserResponse,
@@ -19,7 +20,7 @@ router = APIRouter(prefix="/auth", tags=["authentication"])
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
-# Хранилище кодов для сброса пароля (в продакшене использовать Redis)
+# Хранилище кодов для сброса пароля
 reset_codes = {}
 
 def verify_password(plain_password, hashed_password):
@@ -44,16 +45,28 @@ async def get_current_user(token: str = Depends(oauth2_scheme)):
     try:
         payload = jwt.decode(token, settings.SECRET_KEY, algorithms=[settings.ALGORITHM])
         user_id: str = payload.get("sub")
+        print(f"🔍 Looking for user with ID: {user_id}")
+        
         if user_id is None:
+            print("❌ No user_id in token")
             raise credentials_exception
-    except JWTError:
+    except JWTError as e:
+        print(f"❌ JWT Error: {e}")
         raise credentials_exception
     
     db = get_database()
-    user = await db.users.find_one({"_id": user_id})
-    if user is None:
+    try:
+        # Ищем пользователя по ObjectId
+        user = await db.users.find_one({"_id": ObjectId(user_id)})
+        if user is None:
+            print(f"❌ User not found with ID: {user_id}")
+            raise credentials_exception
+        
+        print(f"✅ User found: {user['email']}")
+        return user
+    except Exception as e:
+        print(f"❌ Error finding user: {e}")
         raise credentials_exception
-    return user
 
 @router.post("/register", response_model=TokenResponse, status_code=201)
 async def register(user_data: UserCreate):
@@ -71,37 +84,45 @@ async def register(user_data: UserCreate):
     user_dict["updated_at"] = datetime.utcnow()
     
     result = await db.users.insert_one(user_dict)
+    user_id = str(result.inserted_id)
     user_dict["_id"] = result.inserted_id
+    
+    print(f"✅ User registered with ID: {user_id}")
     
     # Создаем статистику для пользователя
     await db.stats.insert_one({
-        "user_id": str(result.inserted_id),
+        "user_id": user_id,
         "query_count": 0,
         "streak_days": 0,
         "total_days": 0,
-        "achievements_count": 0
+        "achievements_count": 0,
+        "last_query_date": None
     })
     
     # Создаем начальные достижения
     initial_achievements = [
-        {"user_id": str(result.inserted_id), "title": "Новичок", 
+        {"user_id": user_id, "title": "Новичок", 
          "description": "Зарегистрироваться в приложении", "icon": "🎉", "is_unlocked": True, "unlocked_at": datetime.utcnow()},
-        {"user_id": str(result.inserted_id), "title": "Первый запрос", 
+        {"user_id": user_id, "title": "Первый запрос", 
          "description": "Отправить первый запрос боту", "icon": "🤖", "is_unlocked": False},
-        {"user_id": str(result.inserted_id), "title": "Активный пользователь", 
+        {"user_id": user_id, "title": "Активный пользователь", 
          "description": "Отправить 10 запросов", "icon": "🔥", "is_unlocked": False},
-        {"user_id": str(result.inserted_id), "title": "Эксперт", 
+        {"user_id": user_id, "title": "Эксперт", 
          "description": "Отправить 50 запросов", "icon": "⭐", "is_unlocked": False},
+        {"user_id": user_id, "title": "Мастер", 
+         "description": "Отправить 100 запросов", "icon": "🏆", "is_unlocked": False},
+        {"user_id": user_id, "title": "Легенда", 
+         "description": "Отправить 500 запросов", "icon": "👑", "is_unlocked": False},
     ]
     await db.achievements.insert_many(initial_achievements)
     
     # Создаем токен
-    token = create_access_token({"sub": str(result.inserted_id)})
+    token = create_access_token({"sub": user_id})
     
     return TokenResponse(
         token=token,
         user=UserResponse(
-            id=str(result.inserted_id),
+            id=user_id,
             email=user_dict["email"],
             name=user_dict.get("name"),
             phone=user_dict.get("phone"),
@@ -116,14 +137,19 @@ async def login(login_data: UserLogin):
     
     user = await db.users.find_one({"email": login_data.email})
     if not user or not verify_password(login_data.password, user["hashed_password"]):
+        print(f"❌ Login failed for email: {login_data.email}")
         raise HTTPException(status_code=401, detail="Invalid email or password")
     
-    token = create_access_token({"sub": str(user["_id"])})
+    # Преобразуем ObjectId в строку
+    user_id = str(user["_id"])
+    print(f"✅ User logged in: {user['email']}, ID: {user_id}")
+    
+    token = create_access_token({"sub": user_id})
     
     return TokenResponse(
         token=token,
         user=UserResponse(
-            id=str(user["_id"]),
+            id=user_id,
             email=user["email"],
             name=user.get("name"),
             phone=user.get("phone"),
@@ -138,7 +164,6 @@ async def forgot_password(request: ForgotPasswordRequest):
     
     user = await db.users.find_one({"email": request.email})
     if not user:
-        # Не сообщаем, существует пользователь или нет (безопасность)
         return {"message": "If email exists, reset code will be sent"}
     
     # Генерируем 6-значный код
@@ -148,8 +173,7 @@ async def forgot_password(request: ForgotPasswordRequest):
         "expires": datetime.utcnow() + timedelta(minutes=15)
     }
     
-    # Здесь должна быть отправка email с кодом
-    print(f"Reset code for {request.email}: {code}")
+    print(f"📧 Reset code for {request.email}: {code}")
     
     return {"message": "Reset code sent"}
 
@@ -178,7 +202,6 @@ async def reset_password(request: ResetPasswordRequest):
 
 @router.post("/logout")
 async def logout(current_user: dict = Depends(get_current_user)):
-    # В JWT основе логаут на клиенте, просто подтверждаем
     return {"message": "Logged out successfully"}
 
 @router.get("/validate")

@@ -15,8 +15,8 @@ class UserUpdate(BaseModel):
     name: Optional[str] = None
     phone: Optional[str] = None
 
-class User(UserBase):
-    id: int
+class User(BaseModel):
+    id: str
     avatar_url: Optional[str] = None
     is_active: bool
     created_at: datetime
@@ -111,10 +111,10 @@ class StatsResponse(BaseModel):
     total_days: int
     achievements_count: int
 
-# Bot query
+# ✅ ИСПРАВЛЕНО: Добавлено поле city
 class BotQueryRequest(BaseModel):
     query: str
-    city: str = "samara"
+    city: str = "samara"  # Город по умолчанию
 
 class BotQueryResponse(BaseModel):
     response: str

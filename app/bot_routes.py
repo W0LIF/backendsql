@@ -8,7 +8,7 @@ from langchain_community.retrievers import BM25Retriever
 from langchain_core.documents import Document
 from langchain_community.chat_models import GigaChat
 
-# ✅ Импортируем из schemas, а не переопределяем
+# ✅ Импортируем из schemas
 from .schemas import BotQueryRequest, BotQueryResponse, HistoryResponse
 from .auth_routes import get_current_user
 from .database import get_database
@@ -102,6 +102,8 @@ async def bot_query(
 ):
     db = get_database()
     user_id = str(current_user["_id"])
+    
+    print(f"📨 Bot query from user {user_id}: {request.query}, city: {request.city}")
     
     response_text = await get_ai_response(request.query, request.city)
     

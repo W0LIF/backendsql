@@ -13,6 +13,7 @@ router = APIRouter(prefix="/user", tags=["user"])
 
 @router.get("/profile", response_model=dict)
 async def get_profile(current_user: dict = Depends(get_current_user)):
+    print(f"📱 Getting profile for user: {current_user['_id']}")
     return {
         "user": UserResponse(
             id=str(current_user["_id"]),
@@ -60,22 +61,17 @@ async def upload_avatar(
     file: UploadFile = File(...),
     current_user: dict = Depends(get_current_user)
 ):
-    # Создаем директорию для аватаров если её нет
     os.makedirs("uploads/avatars", exist_ok=True)
     
-    # Генерируем имя файла
     file_extension = os.path.splitext(file.filename)[1]
     file_name = f"{current_user['_id']}{file_extension}"
     file_path = f"uploads/avatars/{file_name}"
     
-    # Сохраняем файл
     with open(file_path, "wb") as buffer:
         shutil.copyfileobj(file.file, buffer)
     
-    # URL для доступа к аватару
     avatar_url = f"/static/avatars/{file_name}"
     
-    # Обновляем в базе
     db = get_database()
     await db.users.update_one(
         {"_id": current_user["_id"]},
@@ -88,7 +84,6 @@ async def upload_avatar(
 async def delete_avatar(current_user: dict = Depends(get_current_user)):
     db = get_database()
     
-    # Удаляем файл если есть
     if current_user.get("avatar_url"):
         file_path = current_user["avatar_url"].replace("/static/", "uploads/")
         if os.path.exists(file_path):
